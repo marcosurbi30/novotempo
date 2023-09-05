@@ -5,21 +5,21 @@
 }
 
 html {
-    font-size:62.5% 
+    font-size: 62.5%
 }
 
 
 
 .container {
     display: grid;
-    grid-template-areas: 
-    "header header "
-    "nav nav nav"
-    "nav nav nav"
-    "aside aside aside"
-    "section section section"
-    "section section section"
-    "footer footer footer";
+    grid-template-areas:
+        "header header "
+        "nav nav nav"
+        "nav nav nav"
+        "aside aside aside"
+        "section section section"
+        "section section section"
+        "footer footer footer";
 }
 
 
@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
 
-    
+
 }
 
 .logo {
@@ -44,7 +44,7 @@ header {
     justify-content: flex-end;
 }
 
-#buscador{
+#buscador {
     height: 35px;
     margin: 15px;
     margin-top: 45px;
@@ -58,10 +58,10 @@ header {
 .botonesarriba {
     height: 70px;
     margin: 15px;
-    
+
 }
 
-
+/* estilos para navegador sin boostrap
 .navegador {
 
     background-color: #da071e;
@@ -84,23 +84,93 @@ nav div a {
     
 }
 
+*/
+
+.navestilos {
+    background-color: #da071e;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.navitem {
+    text-shadow: black 0.1rem 0.1rem;
+    color: white !important;
+    margin: 0.5rem;
+    font-size: 3rem;
+    text-transform: uppercase !important;
+
+}
 
 
-@media (max-width:500px){
+
+
+@media (max-width:500px) {
     .logo {
         width: 12rem;
     }
 
-    .navegador a {
-        font-size: 2rem;
+    .nav-item {
+        font-size: 0.3rem;
 
     }
+
+    .containerCards {
+        display: grid;
+
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6";
+    }
+
+
 }
 
 
 .carousel-item {
-      width: 90%;
-      
+    width: 90%;
+
+}
+
+
+.containerCards {
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.card-body {
+    box-shadow: black 0.1rem 0.1rem;
+
+
+
+}
+
+.card-img-top {
+    height: 15rem;
+
+
+
+
+}
+
+.btn-primary {
+    color: aliceblue;
+    background-color: #da071e;
+    border-radius: 20px;
+
+}
+
+.btn-secundary {
+    color: aliceblue;
+    background-color: black;
+    border-radius: 20px;
+
 }
 
 
@@ -117,7 +187,7 @@ a {
     margin: 10px;
     font-weight: bold;
 
-/* me falta borde negro a la fuente /*/    
+    /* me falta borde negro a la fuente /*/
 
 }
 
@@ -125,7 +195,7 @@ a {
 
     display: flex;
     background-color: #b8b8b8;
-  
+
 }
 
 
