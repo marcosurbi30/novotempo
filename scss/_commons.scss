@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+html {
+    font-size: 62.5%
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header "
+        "nav nav nav"
+        "nav nav nav"
+        "aside aside aside"
+        "section section section"
+        "section section section"
+        "footer footer footer";
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.containerCards {
+    display: grid;
+    justify-content: space-between;
+    //display: flex;
+
+    grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6";
+}
+
+
+
+.carousel-item {
+    width: 90%;
+
+}
+
+.card {
+    &-body {
+        box-shadow: $shadowtext;
+    }
+
+    &-img-top {
+        height: 15rem;
+
+    }
+}
+
+
+.btn {
+    &-primary {
+        color: $secundarycolor;
+        background-color: $maincolor;
+        border-radius: 20px;
+
+    }
+
+    &-secundary {
+        color: $secundarycolor;
+        background-color: $black;
+        border-radius: 20px;
+
+    }
+}
+
+
+
+.promosmes {
+
+    display: flex;
+    background-color: $grey;
+
+}
+
+#logo img {
+    width: 10rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+}
+
+#whatsapp img {
+    position: fixed;
+    width: 10rem;
+    bottom: 20px;
+    right: 20px;
+}
+
+footer {
+    background-color: $black;
+    background-size: 700px;
+
+    h4 {
+        color: $white;
+        font-size: medium;
+    }
+}
