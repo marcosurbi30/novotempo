@@ -41,8 +41,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        justify-content: flex-end;
-        margin-right: 1rem;
+        
     }
 
     &item {
@@ -51,6 +50,8 @@
         margin: 0.5rem;
         font-size: 3rem;
         text-transform: uppercase !important;
+        justify-content: flex-end;
+        margin-right: 1rem;
 
         &:hover {
             color: $secundarycolor;
