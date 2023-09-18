@@ -4,54 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Nosotros </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../img/Logo novotempol.png" type="image/x-icon">
 
 </head>
 
-<body>
+<body class="container" >
     <header>
 
-        <a href="../index.html">
-            <img class="logo" src="img/Logo novotempol.png" alt="logo novotempo">
+        <div><a href="../index.html">
+            <img class="logo" src="../img/Logo novotempol.png" alt="logo novotempo">
+    </div>
+
+    <div class="botones">
+        <div>
+            <form action="buscar">
+                <input type="search" id="buscador" placeholder="buscar">
+            </form>
+        </div>
+        <div>
+            <img class="botonesarriba 1" src="../img/usuario.png" alt="mi cuenta">
+        </div>
+        <div>
+            <img class="botonesarriba 2" src="../img/carrito.png" alt="carrito de compras">
+        </div>
+    </div>
+
+    </a>
     
-            <div class="botones">
-                <div>
-                    <form action="buscar">
-                        <input type="search" id="buscador" placeholder="buscar">
-                    </form>
-                </div>
-                <div>
-                    <img class="botonesarriba 1" src="img/usuario.png" alt="mi cuenta">
-                </div>
-                <div>
-                    <img class="botonesarriba 2" src="img/carrito.png" alt="carrito de compras">
-                </div>
-            </div>
-    
-        </a>
-    
-        <nav class="navegador">
-            <div class="item 1"> inicio </div>
-            <div class="item 2"> colchones </div>
-            <div class="item 3"> sommiers </div>
-            <div class="item 4"> almohadas </div>
-            <div class="item 5"> ofertas </div>
-            <div class="item 6"> nosotros </div>
-    
-        </nav>
     </header>
 
+    <!-- menu hamburguesa bostrap -->
 
+    <nav class="navbar navbar-expand-lg navestilos">
+        <div class="container-fluid">>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navestilos" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active navitem" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="../html/colchones.html">Colchones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="../html/almohadas.html">Almohadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="../html/ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="../html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled navitem" aria-disabled="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main>
+
+        <!-- mapa -->
+        <iframe class="maplocation"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.608454971472!2d-64.239488524423!3d-31.397358095331544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298cbfeb6e70f%3A0xc0e7ef2a27c48d1a!2sNovoTempo!5e0!3m2!1ses!2sde!4v1695071043603!5m2!1ses!2sde"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="" frameborder="0"></iframe>
+
+    
+
+        <!-- fotmulario datos -->
+        <form class="row g-3 formu">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contrasena</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Direccion 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Pais</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Elegir...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <h4>
+            📍 Av. Colón 4371
+            ⏰ Lun a vie de 9:30 a 13:00 hs.
+            y de 16:30 a 19:30 hs. Sáb de 9:30 a 13 hs.
+        </h4>
+
+    </footer>
+
+    <div id="whatsapp">
+        <img src="../img/whatsapp_logo.png" alt="comunicarse por whatsapp">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
-<footer>
-    <h4>
-        📍 Av. Colón 4371
-        ⏰ Lun a vie de 9:30 a 13:00 hs.
-        y de 16:30 a 19:30 hs. Sáb de 9:30 a 13 hs.
-    </h4>
 
-</footer>
 
 </html>

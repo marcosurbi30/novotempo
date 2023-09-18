@@ -1,10 +1,22 @@
-
 @media (max-width:500px) {
     .logo {
-        width: 12rem;
+        width: 8rem;
     }
 
-    //no funciona
+    #buscador {
+        height: 1.5rem;
+        width: 16rem;
+        font-size: $textMd;
+    }
+
+    .botonesarriba {
+        height: 40px;
+        margin: 15px;
+
+    }
+
+
+
     .nav-item {
         font-size: 0.3rem;
 
@@ -14,7 +26,24 @@
         display: grid;
 
         grid-template-areas:
-            "card1 card2 card3"
-            "card4 card5 card6";
+            "card card"
+            "card card";
+
+        margin: 25px;
     }
+
+    #whatsapp {
+        img {
+            width: 8rem;
+        }
+
+
+    }
+
+}
+
+.maplocation {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
 }

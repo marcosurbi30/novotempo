@@ -10,10 +10,7 @@ html {
 
 
 .container {
-    display: grid;
-    grid-template-areas: 
-    "section section section"
-    "nav nav nav";
+   
    
 }
 
@@ -24,15 +21,15 @@ header {
 }
 
 
+//cards
+
 
 .containerCards {
-    display: grid;
+    display: flex;
     justify-content: space-between;
-    //display: flex;
+    
 
-    grid-template-areas:
-        "card1 card2 card3"
-        "card4 card5 card6";
+    
 }
 
 
@@ -48,11 +45,48 @@ header {
     }
 
     &-img-top {
-        height: 15rem;
+        margin-top: 25px;
+        height: 20rem;
 
     }
 }
 
+//promociones de ofertas
+
+.containerboxes {
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+
+
+    .photo-proms {
+        height: 500px; 
+        box-shadow: $shadowtext;      
+    }
+
+    h2 {
+        font-family: $mainFont;
+        margin-top: 20px;
+        margin-top: 25px;
+        padding-top: 25px;
+
+    }
+
+    p {
+        font-family: $mainFont;
+        font-size: $textXxL;
+        background-color: $grey;
+    }
+
+}
+
+
+
+//botones 
 
 .btn {
     &-primary {
@@ -94,6 +128,7 @@ header {
 }
 
 footer {
+    margin-top: 50px;
     background-color: $black;
     background-size: 700px;
 
