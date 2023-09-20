@@ -9,10 +9,7 @@ html {
 }
 
 
-.container {
-   
-   
-}
+.container {}
 
 
 header {
@@ -26,10 +23,48 @@ header {
 
 .containerCards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    
+}
 
-    
+.card {
+
+
+    &-body {
+        box-shadow: $shadowtext;
+    }
+
+    &-img-top {
+        margin-top: 25px;
+        height: 20rem;
+
+    }
+
+    &-ofertas {
+        
+
+
+        img{
+          height: 300px;
+          width: auto;
+        }
+        h5 {
+            @include textos ($textXl,2em,$black,$padding);
+            background-color:$grey;
+        }
+
+        p {
+            @include textos ($textXl,2em,$black,$padding);
+            background-color:$secundarycolor;
+
+        }
+
+        a {
+            font-size: $textMd;
+        }
+    }
+
+
 }
 
 
@@ -59,13 +94,13 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
 
 
 
     .photo-proms {
-        height: 500px; 
-        box-shadow: $shadowtext;      
+        height: 500px;
+        box-shadow: $shadowtext;
     }
 
     h2 {

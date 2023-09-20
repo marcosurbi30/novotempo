@@ -1,0 +1,8 @@
+@mixin textos ($textMd,$line,$color,$padding){
+    font-family: $mainFont;
+    font-size: $textMd;
+    line-height: 2em;
+    color: $black;
+    padding:$padding;
+    margin: 5px;
+}
