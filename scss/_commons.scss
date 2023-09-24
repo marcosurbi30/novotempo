@@ -41,21 +41,22 @@ header {
     }
 
     &-ofertas {
-        
 
 
-        img{
-          height: 300px;
-          width: auto;
+
+        img {
+            height: 300px;
+            width: auto;
         }
+
         h5 {
-            @include textos ($textXl,2em,$black,$padding);
-            background-color:$grey;
+            @include textos ($textXl, 2em, $black, $padding);
+            background-color: $grey;
         }
 
         p {
-            @include textos ($textXl,2em,$black,$padding);
-            background-color:$secundarycolor;
+            @include textos ($textXl, 2em, $black, $padding);
+            background-color: $secundarycolor;
 
         }
 
@@ -88,17 +89,25 @@ header {
 
 //promociones de ofertas
 
+h1 {
+   
+   margin-top: 2rem;
+
+}
+
 .containerboxes {
 
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: $grey;
 
 
 
 
     .photo-proms {
+        flex: 3;
         height: 500px;
         box-shadow: $shadowtext;
     }
