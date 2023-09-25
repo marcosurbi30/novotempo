@@ -16,5 +16,4 @@
 En una carrera que se que no es facil pero que siempre quize poder practicarla, me siento muy conforme y espesialmente muy motivado a seguir aprendiendo.<br>
 Desde ya muchas gracias a los profes por su dedicacion y vamos a seguir estudiando para crecer y tener nuevos conocimientos y motivaciones.</p>
 <ul>
-<li class="has-line-data" data-line-start="26" data-line-end="35"></li>
-</ul>
+
