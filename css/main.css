@@ -18,19 +18,30 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.card-body {
+.containerCards .card-body {
   box-shadow: black 0.1rem 0.1rem;
 }
-.card-img-top {
+.containerCards .card-body h5 {
+  font-size: 2em;
+  background-color: lightskyblue;
+  height: 75px;
+  width: 180px;
+}
+.containerCards .card-body p {
+  font-size: 2em;
+}
+.containerCards .card-body a {
+  font-size: 1em;
+}
+.containerCards .card-img-top {
   margin-top: 25px;
   height: 20rem;
 }
-.card-ofertas img {
+.containerCards .card-ofertas img {
   height: 300px;
   width: auto;
 }
-.card-ofertas h5 {
+.containerCards .card-ofertas h5 {
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   line-height: 2em;
@@ -39,7 +50,7 @@ header {
   margin: 5px;
   background-color: #b8b8b8;
 }
-.card-ofertas p {
+.containerCards .card-ofertas p {
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   line-height: 2em;
@@ -48,7 +59,7 @@ header {
   margin: 5px;
   background-color: lightskyblue;
 }
-.card-ofertas a {
+.containerCards .card-ofertas a {
   font-size: 1em;
 }
 

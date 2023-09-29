@@ -25,47 +25,65 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.card {
 
 
-    &-body {
-        box-shadow: $shadowtext;
+    .card {
+
+
+
+
+        &-body {
+            box-shadow: $shadowtext;
+
+            h5 {
+                font-size: $textXl;
+                background-color: $secundarycolor;
+                height: 75px;
+                width: 180px;
+            }
+
+            p {
+                font-size: $textXl;
+            }
+
+            a {
+                font-size: $textMd;
+            }
+        }
+
+        &-img-top {
+            margin-top: 25px;
+            height: 20rem;
+
+        }
+
+        &-ofertas {
+
+
+
+            img {
+                height: 300px;
+                width: auto;
+            }
+
+            h5 {
+                @include textos ($textXl, 2em, $black, $padding);
+                background-color: $grey;
+            }
+
+            p {
+                @include textos ($textXl, 2em, $black, $padding);
+                background-color: $secundarycolor;
+
+            }
+
+            a {
+                font-size: $textMd;
+            }
+        }
+
+
     }
-
-    &-img-top {
-        margin-top: 25px;
-        height: 20rem;
-
-    }
-
-    &-ofertas {
-
-
-
-        img {
-            height: 300px;
-            width: auto;
-        }
-
-        h5 {
-            @include textos ($textXl, 2em, $black, $padding);
-            background-color: $grey;
-        }
-
-        p {
-            @include textos ($textXl, 2em, $black, $padding);
-            background-color: $secundarycolor;
-
-        }
-
-        a {
-            font-size: $textMd;
-        }
-    }
-
-
 }
 
 
@@ -90,8 +108,8 @@ header {
 //promociones de ofertas
 
 h1 {
-   
-   margin-top: 2rem;
+
+    margin-top: 2rem;
 
 }
 
