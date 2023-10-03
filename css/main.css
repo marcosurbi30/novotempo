@@ -24,7 +24,6 @@ header {
 .containerCards .card-body h5 {
   font-size: 2em;
   background-color: lightskyblue;
-  height: 75px;
   width: 180px;
 }
 .containerCards .card-body p {
@@ -168,10 +167,20 @@ footer h4 {
   font-size: 20px;
 }
 
-.navestilos {
-  background-color: #da071e;
-  height: 50px;
+.nav {
+  position: relative;
+  z-index: 10000;
   display: flex;
+  flex-wrap: wrap;
+  border-color: lightskyblue;
+}
+.navestilos {
+  position: relative;
+  z-index: 10000;
+  background-color: #da071e;
+  height: auto;
+  display: block;
+  text-align: center;
   flex-direction: row;
   justify-content: space-between;
   background-image: linear-gradient(to left, #da071e, black);
@@ -180,7 +189,7 @@ footer h4 {
   text-shadow: black 0.1rem 0.1rem;
   color: antiquewhite !important;
   margin: 0.5rem;
-  font-size: 3rem;
+  font-size: 20px;
   text-transform: uppercase !important;
   justify-content: flex-end;
   margin-right: 1rem;
@@ -197,8 +206,7 @@ footer h4 {
   text-decoration: none;
   color: antiquewhite;
 }
-
-.item {
+.nav .item {
   color: antiquewhite;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -230,6 +238,10 @@ footer h4 {
   font-size: 4em;
   margin: 50px;
 }
+.container-404 .img-404 {
+  height: 900px;
+}
+
 .botones:hover {
   transform: skew(4deg);
   transition: transform 1s;
@@ -273,7 +285,7 @@ footer h4 {
   margin: 35px;
 }
 .container-404 .img-404 {
-  height: 300px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */

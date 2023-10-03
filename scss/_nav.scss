@@ -31,15 +31,28 @@
 
 .nav {
 
+    position: relative;
+    z-index: 10000;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: $secundarycolor;
+
+
+
 
 
     &estilos {
+        position: relative;
+        z-index: 10000;
         background-color: $maincolor;
-        height: 50px;
-        display: flex;
+        height: auto;
+        display: block;
+        text-align: center;
         flex-direction: row;
         justify-content: space-between;
         background-image: linear-gradient(to left, $maincolor, $black);
+
+
 
     }
 
@@ -47,7 +60,7 @@
         text-shadow: $shadowtext;
         color: $white !important;
         margin: 0.5rem;
-        font-size: 3rem;
+        font-size: 20px;
         text-transform: uppercase !important;
         justify-content: flex-end;
         margin-right: 1rem;
@@ -71,16 +84,19 @@
         text-decoration: none;
         color: $white;
     }
-}
 
-.item {
-    color: $white;
-    font-family: $mainFont;
-    font-size: 30px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: bold;
 
-    /* me falta borde negro a la fuente /*/
 
+
+    .item {
+        color: $white;
+        font-family: $mainFont;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: bold;
+
+        /* me falta borde negro a la fuente /*/
+
+    }
 }
